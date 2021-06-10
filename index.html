@@ -165,7 +165,7 @@
 
 
 <div id="motiongraphic" align="center">
-    
+   
         <button onclick="low()" style="background: linear-gradient(90deg, rgba(87,0,0,1) 0%, rgba(255,0,0,1) 100%); padding: 5px; color: white;">LOW</button>
         1 000 DH
         <br>
@@ -180,14 +180,17 @@
         <br>
         <script>
             function low(){
+                document.getElementById("price").disabled = "true";
                 document.getElementById("price").value = "1000";
                 document.getElementById("my-form").style.display = "block";
             }
             function average(){
+                document.getElementById("price").disabled = "true";
                 document.getElementById("price").value = "3000";
                 document.getElementById("my-form").style.display = "block";
             }
             function high(){
+                document.getElementById("price").disabled = "true";
                 document.getElementById("price").value = "5000";
                 document.getElementById("my-form").style.display = "block";
             }
